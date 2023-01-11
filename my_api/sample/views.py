@@ -1,3 +1,11 @@
-from django.shortcuts import render
+from rest_framework.view import APIView
+from rest_framework.response import Response
 
-# Create your views here.
+class OnlyViews(APIView):
+    
+    def get(self, request, format=None):
+        return Response(
+            ["foo", "bar"]
+        )
+
+

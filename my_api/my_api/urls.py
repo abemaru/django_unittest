@@ -15,7 +15,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from sample.views import OnlyViews
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path("only_views/", OnlyViews.as_view(), name="show foo bar")
 ]
+
