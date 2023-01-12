@@ -2,3 +2,5 @@ djangorestframework
 markdown
 django-filter
 Django
+pytest
+pytest-django
