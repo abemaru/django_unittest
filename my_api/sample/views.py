@@ -8,4 +8,6 @@ class OnlyViews(APIView):
             ["foo", "bar"]
         )
 
+    def post(self, request, format=None):
+        pass
 
