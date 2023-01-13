@@ -3,7 +3,7 @@ import pytest
 from rest_framework.test import APIRequestFactory
 from sample.views import OnlyViews
 
-class APIViewTests:
+class TestAPIViewTests:
     def test_get(self):
         factory = APIRequestFactory()
         view = OnlyViews.as_view()
@@ -12,4 +12,4 @@ class APIViewTests:
         request = factory.get(url)
 
         response = view(request)
-        assert response == ["foo", "bar"]
+        assert response.data == ["foo", "bar"]
