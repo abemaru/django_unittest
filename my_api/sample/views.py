@@ -9,5 +9,5 @@ class OnlyViews(APIView):
         )
 
     def post(self, request, format=None):
-        pass
-
+        
+        return Response(int(request.data.get("number")) + 1)

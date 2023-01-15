@@ -19,6 +19,7 @@ from sample.views import OnlyViews
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path("only_views/", OnlyViews.as_view(), name="show foo bar")
+    path("only_views/", OnlyViews.as_view(), name="show foo bar"),
+    # path("only_views/<int: number>/", OnlyViews.as_view(), name="plus 1")
 ]
 
