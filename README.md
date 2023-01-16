@@ -42,3 +42,17 @@ import pytest
 def test_foo():
   assert "hello" == "hello"
 ```
+
+
+## テスト実行まで
+
+### インストール
+```bash
+$ cd my_api
+$ pipenv install -r requirements.txt
+```
+
+### テスト実行
+```bash
+$ pipenv run pytest sample/
+```
